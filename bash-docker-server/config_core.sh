@@ -2,7 +2,7 @@
 
 echo '#########################################################'
 echo '#########################################################'
-echo 'Introduzca un nombre de usuario nuevo, que será el usuario'
+echo 'Introduzca su nombre de usuario que ya exista y que será el usuario'
 echo 'con los permisos para manejar docker en el sistema'
 echo '#########################################################'
 echo '#########################################################'
@@ -15,7 +15,7 @@ echo '#########################################################'
 echo '#########################################################'
 echo '#########################################################'
 
-adduser $usuarioDocker
+#adduser $usuarioDocker
 usermod -aG docker $usuarioDocker
 cp -r app-docker-server/core/ /opt/
 echo '###########################################################################'
