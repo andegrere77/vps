@@ -17,7 +17,7 @@ echo '#########################################################'
 
 adduser $usuarioDocker
 usermod -aG docker $usuarioDocker
-cp app-docker-server/core/ /opt/
+cp -r app-docker-server/core/ /opt/
 echo '###########################################################################'
 echo '###########################################################################'
 echo 'Ingresa el Correo para administracion de Certficado SSL '
